@@ -8,23 +8,21 @@ var questions = [
 var questionArrLength = questions.length
 var questionNumber = 0
 var question = ''
+var answerForm = '<input type="text" id="answer" value=""></input>'
 var i
 // Loop through questions
 for (i = 0; i < questionArrLength; i++) {
   questionNumber = (i + 1)
-  question += '<li>' + 'Question ' + questionNumber + ': ' + questions[i] + '</li>'
+  question += '<li>' + 'Question ' + questionNumber + ': ' + questions[i] + '</li>' + '<br/>' + answerForm
 }
 document.getElementById('questions').innerHTML = question
 
-answer += '<form action="app.js" method="post"><p>' + 'Your Answer: ' + '<input type="text" id="answer" width="100px"></p></form>'
-document.getElementById('answer').innerHTML = answer
-
-var answer = ''
-if (answer.toLowerCase = 'y' || 'yes') {
+var answer = answer.toLowerCase
+if (answer = 'y' || 'yes') {
   console.log('Your answer: Yes')
 } else if (answer.toLowerCase = 'n' || 'no') {
   console.log('Your answer: No')
 } else {
   console.log('Your answer should be a "y" or "yes", it can also be "n" or "no". Please try again')
 }
-document.getElementById('answers').innerHTML = answer
+document.getElementById('answer').innerHTML = answer
