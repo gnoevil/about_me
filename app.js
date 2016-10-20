@@ -1,28 +1,19 @@
-'use strict'
-var questions = [
-  'Have you watched any Harry Potter or read the books?',
-  'Let\'s say you did. Tell me your favorite character?',
-  'Which house would you belong too?',
-  'Is it silly I am asking you these questions?',
-  'How about Marvel then?']  // Array of questions
-var questionArrLength = questions.length
-var questionNumber = 0
-var question = ''
-var answerForm = '<input type="text" id="answer" value=""></input>'
-var i
-// Loop through questions
-for (i = 0; i < questionArrLength; i++) {
-  questionNumber = (i + 1)
-  question += '<li>' + 'Question ' + questionNumber + ': ' + questions[i] + '</li>' + '<br/>' + answerForm
-}
-document.getElementById('questions').innerHTML = question
+'use strict';
 
-var answer = answer.toLowerCase
-if (answer = 'y' || 'yes') {
-  console.log('Your answer: Yes')
-} else if (answer.toLowerCase = 'n' || 'no') {
-  console.log('Your answer: No')
-} else {
-  console.log('Your answer should be a "y" or "yes", it can also be "n" or "no". Please try again')
-}
-document.getElementById('answer').innerHTML = answer
+var username = prompt('What is your name?');
+console.log('Hello ' + username + '!');
+var q1 = prompt('Have you watched any Harry Potter or read the books?')
+var answer1 = q1.toLowerCase;
+console.log(answer1);
+var q2 = prompt('Let\'s say you did. Tell me your favorite character?')
+var answer2 = q2;
+console.log(answer2);
+var q3 = prompt('Which house would you belong too?')
+var answer3 = q3;
+console.log(answer3);
+var q4 = prompt('Is it silly I am asking you these questions?')
+var answer4 = q4;
+console.log(answer4);
+var q5 = prompt('How about Marvel then?')
+var answer5 = q5;
+console.log(answer5);
