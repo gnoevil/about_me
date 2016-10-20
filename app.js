@@ -1,5 +1,6 @@
 'use strict';
-var msg = "Please use yes and y or no and n for answering the questions. "
+
+var msg = "Please use yes and y or no and n for answering the questions. ";
 var username = prompt('What is your name?');
 console.log('Hello ' + username + '!');
 var q1 = prompt('Are you a wizard?');
