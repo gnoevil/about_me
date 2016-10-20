@@ -56,15 +56,17 @@ if(q5.toLowerCase() === 'yes' || q5.toLowerCase() === 'y') {
     console.log(msg);
 }
 
-var q6 = prompt('Let\'s guess a random number');
+var q6content = ('Let\'s guess a random number')
+var q6 = prompt(q6content);
 var guess = 0;
-randomNum = Math.floor(Math.random() * 10);
-if(q6 === randomNum && guess < 4) {
-    console.log("You guessed the number correctly, it was: " + randomNum);
-    score += 1;
-} else if (q6 !== randomNum && guess < 4) {
+var randomNum = Math.floor(Math.random() * 10);
+if (q6 !== randomNum && guess < 4) {
     guess += 1;
     console.log("Sorry, please try again.");
+    prompt(q6content);
+}else if(q6 === randomNum) {
+    console.log("You guessed the number correctly, it was: " + randomNum);
+    score += 1;
 } else {
     console.log("Your current score " + score +"/7");
 }
