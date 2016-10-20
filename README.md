@@ -1,2 +1,2 @@
 # about_me
-The beginning of a portfolio
+Anna made changer here as a driver, Nikko and Geno were navigators.
